@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akshay Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #111;
+            color: white;
+        }
+
+        /* Navigation Bar */
+
+        nav {
+            background-color: black;
+            position: sticky;
+            top: 0;
+            z-index: 1000px;
+        
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: flex-end;
+            list-style: none;
+        }
+
+        nav ul li a {
+            display: block;
+            padding: 18px 20px;
+            text-decoration: none;
+            color: #00bfff;
+            transition: 0.3s;
+        }
+
+        nav ul li a:hover {
+            background-color: white;
+            color: black;
+        }
+
+        /* Sections */
+
+        section {
+            min-height: 100vh;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        #home {
+            background-color:black;
+        }
+
+        #about {
+            background-color:black;
+            color: white;
+        }
+
+        #education {
+            background-color: black;
+            color: white;
+        }
+
+        #skills {
+            background-color:black;
+            color: white;
+        }
+
+        #contact {
+            background-color:black;
+            color: white;
+        }
+
+        /* Home Content */
+
+        .home-content {
+            margin-top: 120px;
+        }
+
+        .home-content h1 {
+            font-size: 48px;
+            margin-bottom: 15px;
+        }
+
+        .home-content p {
+            font-size: 20px;
+            line-height: 1.8;
+        }
+
+        /* Headings */
+
+        h2 {
+            margin-bottom: 30px;
+            font-size: 36px;
+        }
+
+        /* Skills Cards */
+
+        .skills-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 40px;
+        }
+
+        .skill-card {
+            width: 140px;
+            height: 70px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 12px;
+            font-weight: bold;
+            font-size: 18px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+            transition: 0.3s;
+        }
+
+        .skill-card:hover {
+            transform: scale(1.05);
+        }
+
+        .html {
+            background-color: aqua;
+        }
+
+        .css {
+            background-color: bisque;
+        }
+
+        .javascript {
+            background-color: brown;
+            color: white;
+        }
+
+        .python {
+            background-color: cadetblue;
+            color: white;
+        }
+
+        /* Paragraph Styling */
+
+        p {
+            font-size: 20px;
+            line-height: 1.8;
+        }
+
+        /* Responsive */
+
+        @media (max-width: 768px) {
+
+            nav ul {
+                justify-content: center;
+                flex-wrap: wrap;
+            }
+
+            .home-content h1 {
+                font-size: 36px;
+            }
+
+            p {
+                font-size: 18px;
+            }
+        }
+        h1{
+            color: white;
+        }
+        p{
+            color:white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Home Section -->
+
+    <section id="home">
+
+        <div class="home-content">
+
+            <h1>Akshay Palakkal</h1>
+
+            <p>
+                <b>Web Developer | BCA Student</b>
+                <br>
+                I love building websites and learning new technologies.
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- About Section -->
+
+    <section id="about">
+
+        <h2>About Me</h2>
+
+        <p>
+            Hello! I'm Akshay, a BCA student from Kerala.
+            <br><br>
+            I am passionate about web development and enjoy creating
+            simple and user-friendly websites.
+            <br><br>
+            Currently, I am learning JavaScript and improving my frontend skills.
+        </p>
+
+    </section>
+
+    <!-- Education Section -->
+
+    <section id="education">
+
+        <h2>Education</h2>
+
+        <p>
+            <b>Bachelor of Computer Applications</b>
+            <br>
+            Izee College, Bangalore
+            <br>
+            2023 - 2026
+            <br><br>
+
+            <b>Higher Secondary</b>
+            <br>
+            Sree Narayana Higher Secondary School Poothadi
+            <br>
+            2020 - 2022
+        </p>
+
+    </section>
+
+    <!-- Skills Section -->
+
+    <section id="skills">
+
+        <h2>Skills</h2>
+
+        <div class="skills-container">
+
+            <div class="skill-card html">HTML</div>
+
+            <div class="skill-card css">CSS</div>
+
+            <div class="skill-card javascript">JavaScript</div>
+
+            <div class="skill-card python">Python</div>
+
+        </div>
+
+    </section>
+
+    <!-- Contact Section -->
+
+    <section id="contact">
+
+        <h2>Contact</h2>
+
+        <p>
+            Phone: 8590639336
+            <br><br>
+            Email: ppakshay13@gmail.com
+        </p>
+
+    </section>
+
+</body>
+
+</html>
